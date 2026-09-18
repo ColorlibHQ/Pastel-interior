@@ -13,10 +13,10 @@
  * General Section Fields
  ***********************************/
 // Header top background color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_theme_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_general_section',
@@ -28,10 +28,10 @@ Epsilon_Customizer::add_field(
  * Header Section Fields =====================================
  ***********************************/
 //Header Top
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_top_sec',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Top', 'pastel-interior' ),
         'section'     => 'pastelinterior_header_section',
         
@@ -39,10 +39,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header search form toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'pastelinterior_phonenumber_toggle',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Show header Phone Number', 'pastel-interior' ),
 		'description' => esc_html__( 'Toggle to show header phone number.', 'pastel-interior' ),
 		'section'     => 'pastelinterior_header_section',
@@ -50,7 +50,7 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Header top phone number
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_top_phone',
     array(
         'type'        => 'number',
@@ -64,10 +64,10 @@ Epsilon_Customizer::add_field(
 
 
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'social_pro_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Social Profile', 'pastel-interior' ),
         'section'     => 'pastelinterior_header_section',
 
@@ -75,10 +75,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Social Profile Show/Hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_social_profile_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Social Profile Show/Hide', 'pastel-interior' ),
         'section'     => 'pastelinterior_header_section',
         'default'     => false,
@@ -86,10 +86,10 @@ Epsilon_Customizer::add_field(
 );
 
 //Social Profile links
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'pastelinterior_social_pofile',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'pastelinterior_header_section',
 		'label'        => esc_html__( 'Social Profile Links', 'pastel-interior' ),
 		'button_label' => esc_html__( 'Add new social link', 'pastel-interior' ),
@@ -118,10 +118,10 @@ Epsilon_Customizer::add_field(
 
 
 // Header navbar============================================
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_sec',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Navbar', 'pastel-interior' ),
         'section'     => 'pastelinterior_header_section',
         
@@ -129,10 +129,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Background Color', 'pastel-interior' ),
         'description' => esc_html__( 'Select the header background color.', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -142,10 +142,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_header_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_header_section',
@@ -154,10 +154,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_header_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu hover color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_header_section',
@@ -165,10 +165,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header menu dropdown background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_header_menu_dropbg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu dropdown background color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_header_section',
@@ -177,10 +177,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_header_drop_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_header_section',
@@ -188,10 +188,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_drop_menu_item_hover_bg',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu item hover background', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_header_section',
@@ -199,10 +199,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_header_drop_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu hover color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_header_section',
@@ -216,7 +216,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
  
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_excerpt_length',
     array(
         'type'        => 'text',
@@ -231,17 +231,17 @@ Epsilon_Customizer::add_field(
 
 
 // Blog sidebar layout field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_blog_layout',
     array(
-        'type'     => 'epsilon-layouts',
+        'type'     => 'colorlib-layouts',
         'label'    => esc_html__( 'Blog Layout', 'pastel-interior' ),
         'section'  => 'pastelinterior_blog_section',
         'description' => esc_html__( 'Select the option to set blog page layout.', 'pastel-interior' ),
         'layouts'  => array(
-            '1' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/one-column.png',
-            '2' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleright.jpg',
-            '3' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleleft.jpg',
+            '1' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-one-column.svg',
+            '2' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-right.svg',
+            '3' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-left.svg',
         ),
         'default'  => array(
             'columnsCount' => 2,
@@ -263,19 +263,19 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog single page social share icon
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_blog_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog page post meta show/hide', 'pastel-interior' ),
         'section'     => 'pastelinterior_blog_section',
         'default'     => false
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_blog_single_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog single post meta show/hide', 'pastel-interior' ),
         'section'     => 'pastelinterior_blog_section',
         'default'     => false
@@ -288,7 +288,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_fof_titleone',
     array(
         'type'              => 'text',
@@ -299,7 +299,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_fof_titletwo',
     array(
         'type'              => 'text',
@@ -310,10 +310,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_fof_textone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_fof_section',
@@ -321,10 +321,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_fof_texttwo_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_fof_section',
@@ -332,10 +332,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_fof_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_fof_section',
@@ -348,10 +348,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_widget_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'pastel-interior' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'pastel-interior' ),
         'section'     => 'pastelinterior_footer_section',
@@ -360,10 +360,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Widget Background Color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'pastelinterior_footer_widget_bgimg',
 	array(
-		'type'        => 'epsilon-image',
+		'type'        => 'colorlib-image',
 		'label'       => esc_html__( 'Footer Widget Background Image', 'pastel-interior' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'     => 'pastelinterior_footer_section',
@@ -373,10 +373,10 @@ Epsilon_Customizer::add_field(
 // Copy right text
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s Copyright &copy; %s  |  All rights reserved.', 'pastel-interior' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_copyright_text',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'pastel-interior' ),
         'section'     => 'pastelinterior_footer_section',
         'default'     => wp_kses_post( $copyText ),
@@ -384,10 +384,10 @@ Epsilon_Customizer::add_field(
 );
 
 //Social Profile links
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'pastelinterior_social_pofile_footer',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'pastelinterior_footer_section',
 		'label'        => esc_html__( 'Footer Social Profile Links', 'pastel-interior' ),
 		'button_label' => esc_html__( 'Add new social link', 'pastel-interior' ),
@@ -405,7 +405,7 @@ Epsilon_Customizer::add_field(
 			),
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'pentax' ),
-				'type'    => 'epsilon-icon-picker',
+				'type'    => 'colorlib-icon-picker',
 				'default' => 'fa fa-twitter',
 			),
 
@@ -416,10 +416,10 @@ Epsilon_Customizer::add_field(
 
 
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_widget_bdcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Background Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_footer_section',
@@ -428,10 +428,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_widget_textcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_footer_section',
@@ -440,10 +440,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_widget_titlecolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widget Title Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_footer_section',
@@ -452,10 +452,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_widget_anchorcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_footer_section',
@@ -464,10 +464,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'pastelinterior_footer_widget_anchorhovcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'pastel-interior' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'pastelinterior_footer_section',
