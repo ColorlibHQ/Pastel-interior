@@ -37,7 +37,7 @@
             if( pastelinterior_opt( 'pastelinterior_blog_meta' ) == 1 ) {
 	            ?>
                 <ul class="blog-info-link">
-                    <li class="cat_list"><i class="fa fa-tags"></i> <?php echo pastelinterior_featured_post_cat(); ?></li>
+                    <li class="cat_list"><i class="fa-solid fa-tags"></i> <?php echo pastelinterior_featured_post_cat(); ?></li>
                     <li><?php echo pastelinterior_posted_comments(); ?></li>
                 </ul>
 	            <?php

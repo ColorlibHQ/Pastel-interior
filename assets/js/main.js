@@ -51,7 +51,7 @@
             loop: true,
             nav: true,
             dots: false,
-            navText : ['<i class="fa fa-play"></i>','<i class="fa fa-play"></i>']
+            navText : ['<i class="fa-solid fa-play"></i>','<i class="fa-solid fa-play"></i>']
         });
 
         $('.testimonial').owlCarousel({

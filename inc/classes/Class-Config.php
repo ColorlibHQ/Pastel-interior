@@ -120,121 +120,114 @@
 			$scripts = array(
 				'style' => array(
 					array(
-						'handler'		=> 'google-font',
+						'handler'		=> 'pastel-interior-google-font',
 						'file' 			=> $this->google_font(),
 					),
 					array(
-						'handler'		=> 'bootstrap',
+						'handler'		=> 'pastel-interior-bootstrap',
 						'file' 			=> $cssPath.'bootstrap.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '5.3.8-4',
 					),
 					array(
-						'handler'		=> 'font-awesome',
+						'handler'		=> 'pastel-interior-font-awesome',
 						'file' 			=> $cssPath.'fontawesome/css/all.css',
 						'dependency' 	=> array(),
 						'version' 		=> '5.0',
 					),
 					array(
-						'handler'		=> 'themify',
+						'handler'		=> 'pastel-interior-themify',
 						'file' 			=> $cssPath.'themify-icons.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'flaticon',
+						'handler'		=> 'pastel-interior-flaticon',
 						'file' 			=> $cssPath.'flaticon.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'owl-carousel',
+						'handler'		=> 'pastel-interior-owl-carousel',
 						'file' 			=> $cssPath.'owl.carousel.min.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'animate',
+						'handler'		=> 'pastel-interior-animate',
 						'file' 			=> $cssPath.'animate.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'default-css',
+						'handler'		=> 'pastel-interior-default-css',
 						'file' 			=> $cssPath.'default.css',
 						'dependency' 	=> array(),
 						'version' 		=> $this->pastelinterior_version,
 					),
 					array(
-						'handler'		=> 'main',
+						'handler'		=> 'pastel-interior-main',
 						'file' 			=> $cssPath.'main.css',
 						'dependency' 	=> array(),
 						'version' 		=> $this->pastelinterior_version,
 					),
 					array(
-						'handler'		=> 'responsive',
+						'handler'		=> 'pastel-interior-responsive',
 						'file' 			=> $cssPath.'responsive.css',
 						'dependency' 	=> array(),
 						'version' 		=> $this->pastelinterior_version,
 					),
 					array(
-						'handler'		=> 'pastelinterior-style',
+						'handler'		=> 'pastel-interior-pastelinterior-style',
 						'file' 			=> get_stylesheet_uri(),
 					),
 				),
 				
 				'scripts' => array(
 					array(
-						'handler'		=> 'popper',
-						'file' 			=> $jsPath.'popper.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '4.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'bootstrap',
+						'handler'		=> 'pastel-interior-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
 						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '4.1.3',
+						'version' 		=> '5.3.8-4',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'stellar',
+						'handler'		=> 'pastel-interior-stellar',
 						'file' 			=> $jsPath.'stellar.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'owl-carousel',
+						'handler'		=> 'pastel-interior-owl-carousel',
 						'file' 			=> $jsPath.'owl.carousel.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'magnific-popup',
+						'handler'		=> 'pastel-interior-magnific-popup',
 						'file' 			=> $jsPath.'jquery.magnific-popup.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'ajaxchimp',
+						'handler'		=> 'pastel-interior-ajaxchimp',
 						'file' 			=> $jsPath.'jquery.ajaxchimp.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'counterup',
+						'handler'		=> 'pastel-interior-counterup',
 						'file' 			=> $jsPath.'jquery.counterup.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'waypoints',
+						'handler'		=> 'pastel-interior-waypoints',
 						'file' 			=> $jsPath.'jquery.waypoints.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
@@ -248,22 +241,15 @@
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'waypoints',
+						'handler'		=> 'pastel-interior-waypoints',
 						'file' 			=> $jsPath.'jquery.waypoints.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'counterup',
-						'file' 			=> $jsPath.'jquery.counterup.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					
 					array(
-						'handler'		=> 'pastelinterior-main',
+						'handler'		=> 'pastel-interior-pastelinterior-main',
 						'file' 			=> $jsPath.'main.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> $this->pastelinterior_version,

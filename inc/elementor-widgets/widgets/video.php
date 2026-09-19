@@ -135,7 +135,7 @@ class Pastelinterior_Video extends Widget_Base {
                     <?php
                     // Video URL
                     if( !empty( $video_url ) ){
-                        echo '<a '.button_bg() .' class="play-video video-play-button animate" href="'. esc_url( $video_url ) .'" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><i class="fa fa-play"></i>
+                        echo '<a '.button_bg() .' class="play-video video-play-button animate" href="'. esc_url( $video_url ) .'" data-animate="zoomIn" data-duration="1.5s" data-bs-delay="0.1s"><i class="fa-solid fa-play"></i>
                     </a>';
                     }
 

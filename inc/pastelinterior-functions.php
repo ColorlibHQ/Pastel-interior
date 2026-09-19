@@ -129,7 +129,7 @@ if ( ! function_exists( 'pastelinterior_excerpt_length' ) ) {
 ==========================================================*/
 if ( ! function_exists( 'pastelinterior_posted_comments' ) ) {
     function pastelinterior_posted_comments( $icon = true ){
-        $icon = $icon == true ? '<i class="fa fa-comments"></i>' : '';
+        $icon = $icon == true ? '<i class="fa-solid fa-comments"></i>' : '';
         $comments_num = get_comments_number();
         if( comments_open() ){
             if( $comments_num == 0 ){

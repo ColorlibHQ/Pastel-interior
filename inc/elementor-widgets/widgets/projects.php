@@ -206,7 +206,7 @@ class Pastelinterior_projects extends Widget_Base {
                     }
                     ?>
                 </div>
-                <div class="row no-gutters">
+                <div class="row g-0">
                     <?php
                     if( is_array( $projects ) && count( $projects ) > 0 ){
                         foreach ( $projects as $project ){
@@ -232,7 +232,7 @@ class Pastelinterior_projects extends Widget_Base {
                                         <div class="video-icon">
                                             <?php
                                             if( $video_url ){
-                                                echo '<a class="play-video video-play-button animate" href="'. esc_url( $video_url ) .'" style="background-image: url('. PASTELINTERIOR_DIR_IMG .'pattern_bg_3.png)" data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><img src="'.PASTELINTERIOR_DIR_IMG.'arrow.png" alt=""></a>';
+                                                echo '<a class="play-video video-play-button animate" href="'. esc_url( $video_url ) .'" style="background-image: url('. PASTELINTERIOR_DIR_IMG .'pattern_bg_3.png)" data-animate="zoomIn" data-duration="1.5s" data-bs-delay="0.1s"><img src="'.PASTELINTERIOR_DIR_IMG.'arrow.png" alt=""></a>';
                                             }
 
                                             if( $pro_title ){
