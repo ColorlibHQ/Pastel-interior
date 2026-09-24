@@ -10,7 +10,7 @@
 add_action( 'wp_enqueue_scripts', 'pastelinterior_sl_enqueue_scripts' );
 function pastelinterior_sl_enqueue_scripts() {
 
-	wp_enqueue_script( 'pastelinterior-post-likes', PASTELINTERIOR_DIR_JS_URI . 'post-likes.js', array( 'jquery' ), '0.5', false );
+	wp_enqueue_script( 'pastelinterior-post-likes', PASTELINTERIOR_DIR_JS_URI . 'post-likes.js', array( 'pastelinterior-ui-js' ), '0.5-s2', true );
 
 	wp_localize_script( 'pastelinterior-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),

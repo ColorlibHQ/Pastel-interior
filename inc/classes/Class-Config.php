@@ -187,51 +187,23 @@
 					array(
 						'handler'		=> 'pastel-interior-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
-						'dependency' 	=> array( 'jquery' ),
+						'dependency' 	=> array(),
 						'version' 		=> '5.3.8-4',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'pastel-interior-stellar',
-						'file' 			=> $jsPath.'stellar.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'pastel-interior-owl-carousel',
-						'file' 			=> $jsPath.'owl.carousel.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'pastel-interior-magnific-popup',
-						'file' 			=> $jsPath.'jquery.magnific-popup.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'pastel-interior-ajaxchimp',
-						'file' 			=> $jsPath.'jquery.ajaxchimp.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					
 					array(
 						'handler'		=> 'pastelinterior-ui-js',
-						'file' 			=> $jsPath.'colorlib-ui.js',
+						'file' 			=> $jsPath . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'colorlib-ui.js' : 'colorlib-ui.min.js' ),
 						'dependency' 	=> array(),
-						'version' 		=> '2.1.1',
+						'version' 		=> '3.0.0',
 						'in_footer' 	=> true
 					),
 					array(
 						'handler'		=> 'pastel-interior-pastelinterior-main',
 						'file' 			=> $jsPath.'main.js',
-						'dependency' 	=> array( 'jquery', 'pastelinterior-ui-js' ),
-						'version' 		=> $this->pastelinterior_version . '-s1',
+						'dependency' 	=> array( 'pastelinterior-ui-js' ),
+						'version' 		=> $this->pastelinterior_version . '-s2',
 						'in_footer' 	=> true
 					),
 

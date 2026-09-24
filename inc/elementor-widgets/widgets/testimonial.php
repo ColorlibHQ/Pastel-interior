@@ -303,26 +303,29 @@ class Pastelinterior_Testimonial extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-
-            $('.testimonial').owlCarousel({
-                items: 2,
-                loop: true,
-                margin: 30,
-                autoplayHoverPause: true,
-                smartSpeed:500,
-                dots: false,
-                responsive: {
-                    768: {
-                        items: 2
-                    },
-                    320: {
-                        items: 1
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.owl('.testimonial', {
+                    items: 2,
+                    loop: true,
+                    margin: 30,
+                    autoplayHoverPause: true,
+                    smartSpeed: 500,
+                    dots: false,
+                    responsive: {
+                        768: { items: 2 },
+                        320: { items: 1 }
                     }
-                }
-            });
-            
-        })(jQuery);
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

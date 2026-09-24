@@ -254,19 +254,26 @@ class Pastelinterior_Banner extends Widget_Base {
 		if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
 			?>
             <script>
-                ( function( $ ){
-
-                    $('.banner-area').owlCarousel({
+            (function () {
+                function run() {
+                    var UI = window.ColorlibUI;
+                    if (!UI) return;
+                    UI.owl('.banner-area', {
                         items: 1,
                         autoplay: 2500,
                         autoplayTimeout: 5000,
                         loop: true,
                         nav: true,
                         dots: false,
-                        navText : ['<i class="fa-solid fa-play"></i>','<i class="fa-solid fa-play"></i>']
+                        navText: ['<i class="fa-solid fa-play"></i>', '<i class="fa-solid fa-play"></i>']
                     });
-
-                })(jQuery);
+                }
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', run);
+                } else {
+                    run();
+                }
+            })();
             </script>
 			<?php
 		}

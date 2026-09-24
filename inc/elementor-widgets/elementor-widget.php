@@ -294,15 +294,13 @@ if ( !class_exists( 'Pastelinterior_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', PASTELINTERIOR_DIR_ELEMENTOR . 'assets/js/jquery.ajaxchimp.min.js', array('jquery'), '1.0', true );
 
 
             // pastelinterior map custom js
-            wp_register_script( 'pastelinterior-map-custom', PASTELINTERIOR_DIR_ELEMENTOR . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'pastelinterior-map-custom', PASTELINTERIOR_DIR_ELEMENTOR . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
             // pastelinterior companion main js
-            wp_enqueue_script( 'pastel-interior', PASTELINTERIOR_DIR_ELEMENTOR . 'assets/js/pastelinterior-companion-main.js', array( 'jquery', 'jquery-ui-datepicker' ), '1.0', true );
+            wp_enqueue_script( 'pastel-interior', PASTELINTERIOR_DIR_ELEMENTOR . 'assets/js/pastelinterior-companion-main.js', array( 'pastelinterior-ui-js' ), '1.0-s2', true );
 
 
             wp_localize_script( 'pastel-interior', 'ajax_object',
