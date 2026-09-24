@@ -14,6 +14,7 @@ function pastelinterior_sl_enqueue_scripts() {
 
 	wp_localize_script( 'pastelinterior-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'like'    => esc_html__( 'Like', 'pastel-interior' ),
 		'unlike'  => esc_html__( 'Unlike', 'pastel-interior' )
 	) );
 }
