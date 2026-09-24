@@ -32,10 +32,7 @@
     }
     parallaxEffect();
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    ColorlibUI.counter('.counter', { time: 1000 });
 
 
     //------- Owl Carusel  js --------//
@@ -95,24 +92,7 @@
     mailChimp();
 
 
-    /*-------------------------------------
- Instagram Photos
- -------------------------------------*/
-    function cp_instagram_photos() {
-        $('.cp-instagram-photos').each(function(){
-            $.instagramFeed({
-                'username': $(this).data('username'),
-                'container': $(this),
-                'display_profile': false,
-                'display_biography': false,
-                'items': $(this).data('items'),
-                'margin': 0
-            });
-            console.log( $(this) );
-        });
 
-    }
-    cp_instagram_photos();
 
 
 } ( jQuery ) );

@@ -219,40 +219,19 @@
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
-					array(
-						'handler'		=> 'pastel-interior-counterup',
-						'file' 			=> $jsPath.'jquery.counterup.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'pastel-interior-waypoints',
-						'file' 			=> $jsPath.'jquery.waypoints.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'instagramFeed',
-						'file' 			=> $jsPath.'jquery.instagramFeed.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'pastel-interior-waypoints',
-						'file' 			=> $jsPath.'jquery.waypoints.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
 					
+					array(
+						'handler'		=> 'pastelinterior-ui-js',
+						'file' 			=> $jsPath.'colorlib-ui.js',
+						'dependency' 	=> array(),
+						'version' 		=> '2.1.1',
+						'in_footer' 	=> true
+					),
 					array(
 						'handler'		=> 'pastel-interior-pastelinterior-main',
 						'file' 			=> $jsPath.'main.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> $this->pastelinterior_version,
+						'dependency' 	=> array( 'jquery', 'pastelinterior-ui-js' ),
+						'version' 		=> $this->pastelinterior_version . '-s1',
 						'in_footer' 	=> true
 					),
 
