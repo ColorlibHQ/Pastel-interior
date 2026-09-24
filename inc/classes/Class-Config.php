@@ -169,7 +169,7 @@
 						'handler'		=> 'pastel-interior-main',
 						'file' 			=> $cssPath.'main.css',
 						'dependency' 	=> array(),
-						'version' 		=> $this->pastelinterior_version,
+						'version' 		=> $this->pastelinterior_version . '-s3',
 					),
 					array(
 						'handler'		=> 'pastel-interior-responsive',
